@@ -1,0 +1,25 @@
+/* INTERVIEW QUESTIONS
+
+In this editor window, I want you to demonstate the following:
+
+Everytime a user clicks on the Change Color Button, I want you to change the background of the body tag to a random color using on Javascript
+
+You are allowed to use jQuery or any other library you wish.
+
+Your code will be reviewed on the following criteria:
+1. Does it do what it is supposed to do?
+2. How simple is it?
+3. If the requirement changes, how easy will it be for someone else to jump in and change the code?
+
+
+When you are done, please click save and send us the new link to your jsfiddle code
+
+*/
+
+var colors = ["#3c6ac95", "#ffd966", "#6aa84f", "#cc0000"];
+
+
+$(".colour").click(function() {
+  var rand = Math.floor(Math.random() * colors.length);
+  $("body").css("background-color", colors[rand]);
+})
